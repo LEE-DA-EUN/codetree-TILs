@@ -11,7 +11,7 @@ for i in range(n):
     min_num = min(num, min_num)
     max_num = max(num, max_num)
 
-white = max_num - num
-black = num - min_num
+white = abs(max_num - num)
+black = abs(num - min_num)
 
 print(white, black)
